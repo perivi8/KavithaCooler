@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ShoppingBag, Wrench, Star, ArrowRight } from 'lucide-react';
-import heroImage from '@/assets/hero-appliances.jpg';
+// Using public path for hero image
 
 const Hero = () => {
   return (
@@ -96,9 +96,9 @@ const Hero = () => {
           <div className="md:col-span-6">
             <div className="relative">
               <img
-                src={heroImage}
-                alt="Modern home appliances including refrigerator, washing machine, AC, and TV"
-                className="w-full h-auto rounded-2xl shadow-brand"
+                src="/hero-appliances.jpg"
+                alt="Premium home appliances"
+                className="w-full h-auto rounded-xl shadow-2xl border border-border/50"
               />
               
               {/* Floating offer badge */}

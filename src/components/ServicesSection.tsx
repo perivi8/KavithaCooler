@@ -12,7 +12,7 @@ import {
   ArrowRight,
   Star
 } from 'lucide-react';
-import serviceTechnicianImage from '@/assets/service-technician.jpg';
+// Using public path for service technician image
 
 const ServicesSection = () => {
   const services = [
@@ -87,9 +87,9 @@ const ServicesSection = () => {
           <div className="lg:col-span-6">
             <div className="relative">
               <img
-                src={serviceTechnicianImage}
-                alt="Professional technician servicing air conditioner"
-                className="w-full h-auto rounded-2xl shadow-lg"
+                src="/service-technician.jpg"
+                alt="Professional appliance service technician"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
               
               {/* Floating stats */}

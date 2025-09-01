@@ -3,11 +3,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
-// Import category images
-import refrigeratorImage from '@/assets/refrigerator-category.jpg';
-import tvImage from '@/assets/tv-category.jpg';
-import washingMachineImage from '@/assets/washing-machine-category.jpg';
-import fanImage from '@/assets/fan-category.jpg';
+// Image paths in public directory
 
 const CategoryGrid = () => {
   const categories = [
@@ -15,7 +11,7 @@ const CategoryGrid = () => {
       id: 'refrigerator',
       name: 'Refrigerator',
       description: 'Energy efficient cooling solutions',
-      image: refrigeratorImage,
+      image: '/refrigerator-category.jpg',
       itemCount: '150+ Models',
       href: '/shop/refrigerator',
     },
@@ -31,7 +27,7 @@ const CategoryGrid = () => {
       id: 'tv',
       name: 'Television',
       description: 'Smart TVs with latest technology',
-      image: tvImage,
+      image: '/tv-category.jpg',
       itemCount: '200+ Models',
       href: '/shop/tv',
     },
@@ -39,7 +35,7 @@ const CategoryGrid = () => {
       id: 'washing-machine',
       name: 'Washing Machine',
       description: 'Efficient laundry solutions',
-      image: washingMachineImage,
+      image: '/washing-machine-category.jpg',
       itemCount: '80+ Models',
       href: '/shop/washing-machine',
     },
@@ -47,7 +43,7 @@ const CategoryGrid = () => {
       id: 'fan',
       name: 'Fan',
       description: 'Stylish and energy efficient',
-      image: fanImage,
+      image: '/fan-category.jpg',
       itemCount: '100+ Models',
       href: '/shop/fan',
     },
