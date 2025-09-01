@@ -3,7 +3,14 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
-// Image paths in public directory
+// Import images for proper bundling
+import refrigeratorImg from '/refrigerator-category.jpg';
+import acImg from '/ac-category.jpg';
+import tvImg from '/tv-category.jpg';
+import washingImg from '/washing-machine-category.jpg';
+import fanImg from '/fan-category.jpg';
+import waterHeaterImg from '/crompton-wh.jpg';
+import airCoolerImg from '/voltas%20air.jpg';
 
 const CategoryGrid = () => {
   const categories = [
@@ -11,7 +18,7 @@ const CategoryGrid = () => {
       id: 'refrigerator',
       name: 'Refrigerator',
       description: 'Energy efficient cooling solutions',
-      image: '/refrigerator-category.jpg',
+      image: refrigeratorImg,
       itemCount: '150+ Models',
       href: '/shop/refrigerator',
     },
@@ -19,7 +26,7 @@ const CategoryGrid = () => {
       id: 'ac',
       name: 'Air Conditioner',
       description: 'Smart cooling for every room',
-      image: '/ac-category.jpg',
+      image: acImg,
       itemCount: '120+ Models',
       href: '/shop/ac',
     },
@@ -27,7 +34,7 @@ const CategoryGrid = () => {
       id: 'tv',
       name: 'Television',
       description: 'Smart TVs with latest technology',
-      image: '/tv-category.jpg',
+      image: tvImg,
       itemCount: '200+ Models',
       href: '/shop/tv',
     },
@@ -35,7 +42,7 @@ const CategoryGrid = () => {
       id: 'washing-machine',
       name: 'Washing Machine',
       description: 'Efficient laundry solutions',
-      image: '/washing-machine-category.jpg',
+      image: washingImg,
       itemCount: '80+ Models',
       href: '/shop/washing-machine',
     },
@@ -43,7 +50,7 @@ const CategoryGrid = () => {
       id: 'fan',
       name: 'Fan',
       description: 'Stylish and energy efficient',
-      image: '/fan-category.jpg',
+      image: fanImg,
       itemCount: '100+ Models',
       href: '/shop/fan',
     },
@@ -51,7 +58,7 @@ const CategoryGrid = () => {
       id: 'water-heater',
       name: 'Water Heater',
       description: 'Instant and storage heaters',
-      image: '/crompton-wh.jpg',
+      image: waterHeaterImg,
       itemCount: '60+ Models',
       href: '/shop/water-heater',
     },
@@ -59,7 +66,7 @@ const CategoryGrid = () => {
       id: 'air-cooler',
       name: 'Air Cooler',
       description: 'Eco-friendly cooling solutions',
-      image: '/voltas air.jpg',
+      image: airCoolerImg,
       itemCount: '40+ Models',
       href: '/shop/air-cooler',
     },

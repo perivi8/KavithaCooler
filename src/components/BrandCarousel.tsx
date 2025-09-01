@@ -1,16 +1,24 @@
 import { Card } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
 
+// Import brand logos for proper bundling
+import godrejLogo from '/godrej-logo.jpg';
+import voltasLogo from '/voltas-logo.jpg';
+import blueStarLogo from '/blue-star-logo.jpg';
+import panasonicLogo from '/panasonic-logo.jpg';
+import samsungLogo from '/samsung-logo.jpg';
+import lgLogo from '/lg-logo.jpg';
+
 const BrandCarousel = () => {
   const navigate = useNavigate();
   
   const brands = [
-    { name: 'Godrej', logo: '/godrej-logo.jpg', description: 'Innovative and reliable home appliances for modern Indian households.' },
-    { name: 'Voltas', logo: '/voltas-logo.jpg', description: 'Trusted cooling solutions for every Indian home.' },
-    { name: 'Blue Star', logo: '/blue-star-logo.jpg', description: 'Premium air conditioning and refrigeration solutions.' },
-    { name: 'Panasonic', logo: '/panasonic-logo.jpg', description: 'Japanese technology for superior home appliances.' },
-    { name: 'Samsung', logo: '/samsung-logo.jpg', description: 'Cutting-edge electronics and home appliances.' },
-    { name: 'LG', logo: '/lg-logo.jpg', description: "Life's good with LG's innovative home solutions." },
+    { name: 'Godrej', logo: godrejLogo, description: 'Innovative and reliable home appliances for modern Indian households.' },
+    { name: 'Voltas', logo: voltasLogo, description: 'Trusted cooling solutions for every Indian home.' },
+    { name: 'Blue Star', logo: blueStarLogo, description: 'Premium air conditioning and refrigeration solutions.' },
+    { name: 'Panasonic', logo: panasonicLogo, description: 'Japanese technology for superior home appliances.' },
+    { name: 'Samsung', logo: samsungLogo, description: 'Cutting-edge electronics and home appliances.' },
+    { name: 'LG', logo: lgLogo, description: "Life's good with LG's innovative home solutions." },
   ];
 
   return (

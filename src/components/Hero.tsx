@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ShoppingBag, Wrench, Star, ArrowRight } from 'lucide-react';
-// Using public path for hero image
+
+// Import hero image for proper bundling
+import heroImage from '/hero-appliances.jpg';
 
 const Hero = () => {
   return (
@@ -96,7 +98,7 @@ const Hero = () => {
           <div className="md:col-span-6">
             <div className="relative">
               <img
-                src="/hero-appliances.jpg"
+                src={heroImage}
                 alt="Premium home appliances"
                 className="w-full h-auto rounded-xl shadow-2xl border border-border/50"
               />

@@ -1,5 +1,14 @@
 import { Product } from "@/types/product";
 
+// Import product images for proper bundling
+import sonyTvImg from '/sony%20tv.jpg';
+import voltasAcImg from '/voltas%20ac.jpg';
+import lgWashingImg from '/lg%20washing.jpg';
+import havellsFanImg from '/havells%20fan.jpg';
+import samsungRefrigImg from '/samsung%20refrig.jpg';
+import cromptonWhImg from '/crompton-wh.jpg';
+import voltasAirImg from '/voltas%20air.jpg';
+
 export const products: Product[] = [
   {
     id: "1",
@@ -11,7 +20,7 @@ export const products: Product[] = [
     discountPct: 21,
     rating: 4.5,
     reviewsCount: 1245,
-    image: "/sony tv.jpg",
+    image: sonyTvImg,
     inStock: true,
     specs: {
       "Screen Size": "55 inch",
@@ -30,7 +39,7 @@ export const products: Product[] = [
     discountPct: 15,
     rating: 4.3,
     reviewsCount: 987,
-    image: "/voltas ac.jpg",
+    image: voltasAcImg,
     inStock: true,
     capacity: "1.5 Ton",
     energyRating: "5 Star",
@@ -50,7 +59,7 @@ export const products: Product[] = [
     discountPct: 17,
     rating: 4.4,
     reviewsCount: 2345,
-    image: "/lg washing.jpg",
+    image: lgWashingImg,
     inStock: true,
     capacity: "7.2 kg",
     specs: {
@@ -69,7 +78,7 @@ export const products: Product[] = [
     discountPct: 21,
     rating: 4.2,
     reviewsCount: 876,
-    image: "/havells fan.jpg",
+    image: havellsFanImg,
     inStock: true,
     specs: {
       "Size": "1200mm (48 inch)",
@@ -87,7 +96,7 @@ export const products: Product[] = [
     discountPct: 15,
     rating: 4.6,
     reviewsCount: 1543,
-    image: "/samsung refrig.jpg",
+    image: samsungRefrigImg,
     inStock: true,
     capacity: "253L",
     energyRating: "3 Star",
@@ -108,7 +117,7 @@ export const products: Product[] = [
     discountPct: 22,
     rating: 4.1,
     reviewsCount: 567,
-    image: "/crompton-wh.jpg",
+    image: cromptonWhImg,
     inStock: true,
     capacity: "3L",
     specs: {
@@ -128,7 +137,7 @@ export const products: Product[] = [
     discountPct: 19,
     rating: 4.0,
     reviewsCount: 432,
-    image: "/voltas air.jpg",
+    image: voltasAirImg,
     inStock: true,
     capacity: "55L",
     specs: {
@@ -147,7 +156,7 @@ export const products: Product[] = [
     discountPct: 16,
     rating: 4.5,
     reviewsCount: 876,
-    image: "/voltas ac.jpg",
+    image: voltasAcImg,
     inStock: true,
     capacity: "1.8 Ton",
     energyRating: "5 Star",
@@ -167,7 +176,7 @@ export const products: Product[] = [
     discountPct: 15,
     rating: 4.3,
     reviewsCount: 1987,
-    image: "/lg washing.jpg",
+    image: lgWashingImg,
     inStock: true,
     capacity: "6.5 kg",
     specs: {
@@ -186,7 +195,7 @@ export const products: Product[] = [
     discountPct: 17,
     rating: 4.4,
     reviewsCount: 2345,
-    image: "/havells fan.jpg",
+    image: havellsFanImg,
     inStock: true,
     specs: {
       "Size": "1200mm (48 inch)",
@@ -204,7 +213,7 @@ export const products: Product[] = [
     discountPct: 16,
     rating: 4.5,
     reviewsCount: 1987,
-    image: "/samsung refrig.jpg",
+    image: samsungRefrigImg,
     inStock: false,
     capacity: "260L",
     energyRating: "4 Star",
@@ -225,7 +234,7 @@ export const products: Product[] = [
     discountPct: 18,
     rating: 4.3,
     reviewsCount: 654,
-    image: "/crompton-wh.jpg",
+    image: cromptonWhImg,
     inStock: true,
     capacity: "6L",
     specs: {
