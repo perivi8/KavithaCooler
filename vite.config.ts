@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => {
   
   return {
     base: "/",
+    publicDir: 'public',
     plugins: [react()],
     resolve: {
       alias: [
@@ -32,9 +33,14 @@ export default defineConfig(({ mode }) => {
             vendor: ['@radix-ui/react-dialog', 'class-variance-authority', 'clsx', 'zod'],
           },
           assetFileNames: (assetInfo) => {
+            // Handle files from public directory
+            if (assetInfo.name?.startsWith('public/')) {
+              return assetInfo.name.replace('public/', '');
+            }
+            // Handle other assets
             const info = assetInfo.name?.split('.') || [];
-            const ext = info[info.length - 1];
-            if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(ext || '')) {
+            const ext = info[info.length - 1]?.toLowerCase();
+            if (['png', 'jpg', 'jpeg', 'svg', 'gif', 'tiff', 'bmp', 'ico', 'webp'].includes(ext)) {
               return `assets/images/[name]-[hash][extname]`;
             }
             return `assets/[name]-[hash][extname]`;

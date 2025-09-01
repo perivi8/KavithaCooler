@@ -8,37 +8,37 @@ const brands = [
   {
     id: 1,
     name: 'Godrej',
-    logo: '/godrej logo.jpg',
+    logo: '/godrej-logo.jpg',
     description: 'Innovative and reliable home appliances for modern Indian households.'
   },
   {
     id: 2,
     name: 'Voltas',
-    logo: '/voltas logo.jpg',
+    logo: '/voltas-logo.jpg',
     description: 'Trusted cooling solutions for every Indian home.'
   },
   {
     id: 3,
     name: 'Blue Star',
-    logo: '/blue star logo.jpg',
+    logo: '/blue-star-logo.jpg',
     description: 'Premium air conditioning and refrigeration solutions.'
   },
   {
     id: 4,
     name: 'Panasonic',
-    logo: '/panasonic logo.jpg',
+    logo: '/panasonic-logo.jpg',
     description: 'Japanese technology for superior home appliances.'
   },
   {
     id: 5,
     name: 'Samsung',
-    logo: '/samsung logo.jpg',
+    logo: '/samsung-logo.jpg',
     description: 'Cutting-edge electronics and home appliances.'
   },
   {
     id: 6,
     name: 'LG',
-    logo: '/lg logo.jpg',
+    logo: '/lg-logo.jpg',
     description: 'Life\'s good with LG\'s innovative home solutions.'
   }
 ];
