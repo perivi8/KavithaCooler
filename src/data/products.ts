@@ -1,13 +1,13 @@
 import { Product } from "@/types/product";
 
 // Import product images for proper bundling
-import sonyTvImg from '/sony%20tv.jpg';
-import voltasAcImg from '/voltas%20ac.jpg';
-import lgWashingImg from '/lg%20washing.jpg';
-import havellsFanImg from '/havells%20fan.jpg';
-import samsungRefrigImg from '/samsung%20refrig.jpg';
+import sonyTvImg from '/sony tv.jpg';
+import voltasAcImg from '/voltas ac.jpg';
+import lgWashingImg from '/lg washing.jpg';
+import havellsFanImg from '/havells fan.jpg';
+import samsungRefrigImg from '/samsung refrig.jpg';
 import cromptonWhImg from '/crompton-wh.jpg';
-import voltasAirImg from '/voltas%20air.jpg';
+import voltasAirImg from '/voltas air.jpg';
 
 export const products: Product[] = [
   {

@@ -10,7 +10,7 @@ import tvImg from '/tv-category.jpg';
 import washingImg from '/washing-machine-category.jpg';
 import fanImg from '/fan-category.jpg';
 import waterHeaterImg from '/crompton-wh.jpg';
-import airCoolerImg from '/voltas%20air.jpg';
+import airCoolerImg from '/voltas air.jpg';
 
 const CategoryGrid = () => {
   const categories = [
